@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  database_score: 1
+  webapp_score: 1
+  design_score: 1
+  tech_plan_score: 1
+  webdev_score: 1
+  content_mgt_score: 1
+  tech_support_score: 1
+  egov_score: 1
+  ehealth_score: 1
+  updated_by: 1
+
+two:
+  database_score: 1
+  webapp_score: 1
+  design_score: 1
+  tech_plan_score: 1
+  webdev_score: 1
+  content_mgt_score: 1
+  tech_support_score: 1
+  egov_score: 1
+  ehealth_score: 1
+  updated_by: 1

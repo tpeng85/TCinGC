@@ -1,0 +1,55 @@
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (60.0ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (119.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateStudents (20110927042151)
+  [1m[35mSQL (77.0ms)[0m  CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (23.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042151')[0m
+Migrating to CreateStaffs (20110927042244)
+  [1m[35mSQL (83.0ms)[0m  CREATE TABLE `staffs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (23.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042244')[0m
+Migrating to CreatePartners (20110927042447)
+  [1m[35mSQL (81.0ms)[0m  CREATE TABLE `partners` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `address_one` varchar(255), `address_two` varchar(255), `type` varchar(255), `description` text, `language` varchar(255), `living_accomodations` varchar(255), `living_utilities` text, `distance_to_duty_station` float, `cost_living` float, `transportation` varchar(255), `cost_transportation` float, `visa_fee` float, `visa_requirements` text, `medivac_details` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (17.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042447')[0m
+Migrating to CreateContacts (20110927042546)
+  [1m[35mSQL (78.0ms)[0m  CREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `first_name` varchar(255), `last_name` varchar(255), `email` varchar(255), `password` varchar(255), `office_number` varchar(255), `mobile_number` varchar(255), `skype` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042546')[0m
+Migrating to CreateAssignments (20110927042631)
+  [1m[35mSQL (77.0ms)[0m  CREATE TABLE `assignments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `position` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (21.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042631')[0m
+Migrating to CreateStudentApplications (20110927042710)
+  [1m[35mSQL (78.0ms)[0m  CREATE TABLE `student_applications` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `resume` blob, `transcript` blob, `statement` blob, `accepted` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042710')[0m
+Migrating to CreateProjectApplications (20110927042755)
+  [1m[35mSQL (78.0ms)[0m  CREATE TABLE `project_applications` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` text, `number_of_consultants` int(11), `accepted` tinyint(1), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042755')[0m
+Migrating to CreateProjectScorecards (20110927042930)
+  [1m[35mSQL (69.0ms)[0m  CREATE TABLE `project_scorecards` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `database_score` int(11), `webapp_score` int(11), `design_score` int(11), `tech_plan_score` int(11), `webdev_score` int(11), `content_mgt_score` int(11), `tech_support_score` int(11), `egov_score` int(11), `ehealth_score` int(11), `updated_by` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927042930')[0m
+Migrating to CreateStudentScorecards (20110927043135)
+  [1m[35mSQL (77.0ms)[0m  CREATE TABLE `student_scorecards` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `resume_score` int(11), `transcript_score` int(11), `statement_score` int(11), `special_class_score` int(11), `database_score` int(11), `webapp_score` int(11), `design_score` int(11), `tech_plan_score` int(11), `webdev_score` int(11), `content_mgt_score` int(11), `tech_support_score` int(11), `geo_infosys_score` int(11), `egov_score` int(11), `ehealth_score` int(11), `security_score` int(11), `updated_by` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (21.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110927043135')[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `assignments`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `assignments`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `contacts`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `contacts`
+  [1m[36mSQL (9.0ms)[0m  [1mdescribe `partners`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_applications`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `project_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `staffs`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `staffs`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `student_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `student_applications`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `student_scorecards`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `students`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `students`

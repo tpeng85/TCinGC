@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  description: MyText
+  number_of_consultants: 1
+  accepted: false
+
+two:
+  description: MyText
+  number_of_consultants: 1
+  accepted: false

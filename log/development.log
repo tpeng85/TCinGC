@@ -53,3 +53,67 @@ Migrating to CreateStudentScorecards (20110927043135)
   [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `student_scorecards`
   [1m[36mSQL (2.0ms)[0m  [1mdescribe `students`[0m
   [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `students`
+  [1m[36mSQL (217.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (4.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+  [1m[35mSQL (123.0ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(128) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int(11) DEFAULT 0, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (169.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email` ON `users` (`email`)
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[35mSQL (148.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_reset_password_token` ON `users` (`reset_password_token`)
+  [1m[36mSQL (27.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928020628')[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `assignments`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `assignments`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `contacts`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `contacts`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `partners`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_applications`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `project_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `staffs`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `staffs`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `student_applications`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `student_applications`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `student_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `students`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `students`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `users`
+
+
+Started GET "/user/sign_up" for 127.0.0.1 at 2011-09-27 22:21:48 -0400
+
+ActionController::RoutingError (No route matches "/user/sign_up"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-27 22:21:53 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (106.0ms)
+Completed 200 OK in 141ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-09-27 22:21:57 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qdsXdRbVzxDvF63etbf791D1sTug3ALry/jGriJK4jQ=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (12.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  ROLLBACK
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 71ms (Views: 34.0ms | ActiveRecord: 13.0ms)

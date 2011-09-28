@@ -7,12 +7,12 @@ one:
   type: MyString
   description: MyText
   language: MyString
-  living_accomodations: MyString
+  living_accomodation: MyString
   living_utilities: MyText
   distance_to_duty_station: 1.5
-  cost_living: 1.5
+  cost_of_living: 1.5
   transportation: MyString
-  cost_transportation: 1.5
+  cost_of_transportation: 1.5
   visa_fee: 1.5
   visa_requirements: MyText
   medivac_details: MyText
@@ -24,12 +24,12 @@ two:
   type: MyString
   description: MyText
   language: MyString
-  living_accomodations: MyString
+  living_accomodation: MyString
   living_utilities: MyText
   distance_to_duty_station: 1.5
-  cost_living: 1.5
+  cost_of_living: 1.5
   transportation: MyString
-  cost_transportation: 1.5
+  cost_of_transportation: 1.5
   visa_fee: 1.5
   visa_requirements: MyText
   medivac_details: MyText

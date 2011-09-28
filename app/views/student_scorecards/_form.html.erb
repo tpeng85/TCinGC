@@ -1,0 +1,81 @@
+<%= form_for(@student_scorecard) do |f| %>
+  <% if @student_scorecard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student_scorecard.errors.count, "error") %> prohibited this student_scorecard from being saved:</h2>
+
+      <ul>
+      <% @student_scorecard.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :resume_score %><br />
+    <%= f.text_field :resume_score %>
+  </div>
+  <div class="field">
+    <%= f.label :transcript_score %><br />
+    <%= f.text_field :transcript_score %>
+  </div>
+  <div class="field">
+    <%= f.label :statement_of_interest_score %><br />
+    <%= f.text_field :statement_of_interest_score %>
+  </div>
+  <div class="field">
+    <%= f.label :special_class_score %><br />
+    <%= f.text_field :special_class_score %>
+  </div>
+  <div class="field">
+    <%= f.label :database_score %><br />
+    <%= f.text_field :database_score %>
+  </div>
+  <div class="field">
+    <%= f.label :web_app_score %><br />
+    <%= f.text_field :web_app_score %>
+  </div>
+  <div class="field">
+    <%= f.label :design_score %><br />
+    <%= f.text_field :design_score %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_plan_score %><br />
+    <%= f.text_field :tech_plan_score %>
+  </div>
+  <div class="field">
+    <%= f.label :web_dev_score %><br />
+    <%= f.text_field :web_dev_score %>
+  </div>
+  <div class="field">
+    <%= f.label :content_mgt_score %><br />
+    <%= f.text_field :content_mgt_score %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_support_score %><br />
+    <%= f.text_field :tech_support_score %>
+  </div>
+  <div class="field">
+    <%= f.label :geo_infosys_score %><br />
+    <%= f.text_field :geo_infosys_score %>
+  </div>
+  <div class="field">
+    <%= f.label :egov_score %><br />
+    <%= f.text_field :egov_score %>
+  </div>
+  <div class="field">
+    <%= f.label :ehealth_score %><br />
+    <%= f.text_field :ehealth_score %>
+  </div>
+  <div class="field">
+    <%= f.label :security_store %><br />
+    <%= f.text_field :security_store %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

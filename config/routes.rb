@@ -1,4 +1,18 @@
 Tcingc::Application.routes.draw do
+  resources :student_scorecards
+
+  resources :project_scorecards
+
+  resources :project_applications
+
+  resources :student_applications
+
+  resources :partners
+
+  get "student_applications/index"
+
+  get "student_applications/create"
+
   get "user_registrations/create"
 
   get "home/index"

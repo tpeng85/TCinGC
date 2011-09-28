@@ -1,0 +1,65 @@
+<%= form_for(@project_scorecard) do |f| %>
+  <% if @project_scorecard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@project_scorecard.errors.count, "error") %> prohibited this project_scorecard from being saved:</h2>
+
+      <ul>
+      <% @project_scorecard.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :database_score %><br />
+    <%= f.text_field :database_score %>
+  </div>
+  <div class="field">
+    <%= f.label :web_app_score %><br />
+    <%= f.text_field :web_app_score %>
+  </div>
+  <div class="field">
+    <%= f.label :design_score %><br />
+    <%= f.text_field :design_score %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_plan_score %><br />
+    <%= f.text_field :tech_plan_score %>
+  </div>
+  <div class="field">
+    <%= f.label :web_dev_score %><br />
+    <%= f.text_field :web_dev_score %>
+  </div>
+  <div class="field">
+    <%= f.label :content_mgt_score %><br />
+    <%= f.text_field :content_mgt_score %>
+  </div>
+  <div class="field">
+    <%= f.label :tech_support_score %><br />
+    <%= f.text_field :tech_support_score %>
+  </div>
+  <div class="field">
+    <%= f.label :geo_infosys_score %><br />
+    <%= f.text_field :geo_infosys_score %>
+  </div>
+  <div class="field">
+    <%= f.label :egov_score %><br />
+    <%= f.text_field :egov_score %>
+  </div>
+  <div class="field">
+    <%= f.label :ehealth_score %><br />
+    <%= f.text_field :ehealth_score %>
+  </div>
+  <div class="field">
+    <%= f.label :security_score %><br />
+    <%= f.text_field :security_score %>
+  </div>
+  <div class="field">
+    <%= f.label :updated_by %><br />
+    <%= f.text_field :updated_by %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

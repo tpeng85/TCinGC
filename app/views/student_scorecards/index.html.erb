@@ -1,0 +1,53 @@
+<h1>Listing student_scorecards</h1>
+
+<table>
+  <tr>
+    <th>Resume score</th>
+    <th>Transcript score</th>
+    <th>Statement of interest score</th>
+    <th>Special class score</th>
+    <th>Database score</th>
+    <th>Web app score</th>
+    <th>Design score</th>
+    <th>Tech plan score</th>
+    <th>Web dev score</th>
+    <th>Content mgt score</th>
+    <th>Tech support score</th>
+    <th>Geo infosys score</th>
+    <th>Egov score</th>
+    <th>Ehealth score</th>
+    <th>Security store</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @student_scorecards.each do |student_scorecard| %>
+  <tr>
+    <td><%= student_scorecard.resume_score %></td>
+    <td><%= student_scorecard.transcript_score %></td>
+    <td><%= student_scorecard.statement_of_interest_score %></td>
+    <td><%= student_scorecard.special_class_score %></td>
+    <td><%= student_scorecard.database_score %></td>
+    <td><%= student_scorecard.web_app_score %></td>
+    <td><%= student_scorecard.design_score %></td>
+    <td><%= student_scorecard.tech_plan_score %></td>
+    <td><%= student_scorecard.web_dev_score %></td>
+    <td><%= student_scorecard.content_mgt_score %></td>
+    <td><%= student_scorecard.tech_support_score %></td>
+    <td><%= student_scorecard.geo_infosys_score %></td>
+    <td><%= student_scorecard.egov_score %></td>
+    <td><%= student_scorecard.ehealth_score %></td>
+    <td><%= student_scorecard.security_store %></td>
+    <td><%= student_scorecard.updated_by %></td>
+    <td><%= link_to 'Show', student_scorecard %></td>
+    <td><%= link_to 'Edit', edit_student_scorecard_path(student_scorecard) %></td>
+    <td><%= link_to 'Destroy', student_scorecard, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student scorecard', new_student_scorecard_path %>

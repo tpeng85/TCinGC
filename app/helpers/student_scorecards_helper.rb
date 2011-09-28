@@ -1,0 +1,2 @@
+module StudentScorecardsHelper
+end

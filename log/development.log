@@ -228,3 +228,324 @@ Migrating to AddUsersFields (20110928023340)
   [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `students`[0m
   [1m[35mSQL (2.0ms)[0m  describe `users`
   [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+Migrating to CreateStudents (20110928022959)
+Migrating to CreateContacts (20110928023057)
+Migrating to AddUsersFields (20110928023340)
+Migrating to AddRoleToUsers (20110928030042)
+  [1m[35mSQL (177.0ms)[0m  ALTER TABLE `users` ADD `role` varchar(255)
+  [1m[36mSQL (15.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928030042')[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `assignments`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `assignments`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `contacts`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `contacts`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `partners`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_applications`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_scorecards`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `staffs`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `staffs`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `student_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `student_applications`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `student_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `students`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `students`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+Migrating to AddUsersFields (20110928023340)
+Migrating to AddRoleToUsers (20110928030042)
+Migrating to CreateStudents (20110928030239)
+  [1m[35mSQL (1.0ms)[0m  CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql::Error: Table 'students' already exists: CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+Migrating to AddUsersFields (20110928023340)
+Migrating to AddRoleToUsers (20110928030042)
+Migrating to CreateStudents (20110928030239)
+  [1m[35mSQL (103.0ms)[0m  CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (17.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928030239')[0m
+Migrating to CreateContacts (20110928030419)
+  [1m[35mSQL (73.0ms)[0m  CREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `office_number` varchar(255), `mobile_number` varchar(255), `skype` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (20.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928030419')[0m
+Migrating to AddFieldsToUser (20110928031947)
+  [1m[35mSQL (172.0ms)[0m  ALTER TABLE `users` ADD `rolable_id` int(11)
+  [1m[36mSQL (177.0ms)[0m  [1mALTER TABLE `users` ADD `rolable_type` varchar(255)[0m
+  [1m[35mSQL (18.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110928031947')
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  describe `assignments`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `contacts`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `contacts`[0m
+  [1m[35mSQL (3.0ms)[0m  describe `partners`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `partners`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `project_applications`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `project_scorecards`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `project_scorecards`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `staffs`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `staffs`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `student_applications`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `student_scorecards`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `student_scorecards`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `students`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `students`[0m
+  [1m[35mSQL (3.0ms)[0m  describe `users`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-27 23:40:37 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 386ms
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2011-09-27 23:40:46 -0400
+
+ActionController::RoutingError (No route matches "/users/sign_out"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/user/sign_out" for 127.0.0.1 at 2011-09-27 23:40:49 -0400
+
+ActionController::RoutingError (No route matches "/user/sign_out"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-27 23:40:54 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2011-09-27 23:41:24 -0400
+
+ActionController::RoutingError (No route matches "/users/sign_out"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-27 23:49:24 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mSQL (2.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+Rendered home/index.html.erb within layouts/application (351.0ms)
+Completed 200 OK in 371ms (Views: 369.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2011-09-27 23:49:38 -0400
+
+ActionController::RoutingError (No route matches "/users/sign_out"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-27 23:50:37 -0400
+  Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendered home/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_out" for 127.0.0.1 at 2011-09-27 23:50:40 -0400
+  Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qdsXdRbVzxDvF63etbf791D1sTug3ALry/jGriJK4jQ="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 1) LIMIT 1
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 152ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-27 23:50:40 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 37ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-09-27 23:50:42 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/registrations/new.html.erb within layouts/application (66.0ms)
+Completed   in 102ms
+
+ActionView::Template::Error (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+    3: <%
+    4:   # customized code begin
+    5: 
+    6:   params[:user][:user_type] ||= 'student'
+    7: 
+    8:   if ["student", "contact"].include? params[:user][:user_type].downcase
+    9:     child_class_name = params[:user][:user_type].downcase.camelize
+  app/views/devise/registrations/new.html.erb:6:in `_app_views_devise_registrations_new_html_erb___652740256_28315380__998379719'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:51:22 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"user"=>{"user_type"=>"student"}}
+Rendered devise/registrations/new.html.erb within layouts/application (106.0ms)
+Completed   in 143ms
+
+ActionView::Template::Error (Missing partial devise/registrations/student_fields with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Users/Ryan/Desktop/TCinGC/app/views", "c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views"):
+    32: 
+    33:   <% # customized code begin %>
+    34:   <%= fields_for resource.rolable do |rf| %>
+    35:     <% render :partial => "#{child_class_name.underscore}_fields", :locals => { :f => rf } %>
+    36:   <% end %>
+    37: 
+    38:   <%= hidden_field :user, :user_type, :value => user_type %>
+  app/views/devise/registrations/new.html.erb:35:in `block (2 levels) in _app_views_devise_registrations_new_html_erb___652740256_28008720__998379719'
+  app/views/devise/registrations/new.html.erb:34:in `block in _app_views_devise_registrations_new_html_erb___652740256_28008720__998379719'
+  app/views/devise/registrations/new.html.erb:21:in `_app_views_devise_registrations_new_html_erb___652740256_28008720__998379719'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:51:35 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"user"=>{"user_type"=>"student"}}
+Rendered devise/registrations/_student_fields.erb (1.0ms)
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 96ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:55:17 -0400
+
+ActionController::RoutingError (uninitialized constant Devise::RegistrationController):
+  app/controllers/user_registrations_controller.rb:1:in `<top (required)>'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:56:35 -0400
+  Processing by UserRegistrationsController#new as HTML
+  Parameters: {"user"=>{"user_type"=>"student"}}
+Completed   in 40ms
+
+ActionView::MissingTemplate (Missing template user_registrations/new with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Users/Ryan/Desktop/TCinGC/app/views", "c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views"):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (1.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:56:51 -0400
+  Processing by UserRegistrationsController#new as HTML
+  Parameters: {"user"=>{"user_type"=>"student"}}
+Rendered user_registrations/new.html.erb within layouts/application (36.0ms)
+Completed   in 97ms
+
+ActionView::Template::Error (Missing partial user_registrations/student_fields with {:handlers=>[:erb, :rjs, :builder, :rhtml, :rxml], :formats=>[:html], :locale=>[:en, :en]} in view paths "C:/Users/Ryan/Desktop/TCinGC/app/views", "c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views"):
+    32: 
+    33:   <% # customized code begin %>
+    34:   <%= fields_for resource.rolable do |rf| %>
+    35:     <% render :partial => "#{child_class_name.underscore}_fields", :locals => { :f => rf } %>
+    36:   <% end %>
+    37: 
+    38:   <%= hidden_field :user, :user_type, :value => user_type %>
+  app/views/user_registrations/new.html.erb:35:in `block (2 levels) in _app_views_user_registrations_new_html_erb__807295373_59406576__998379719'
+  app/views/user_registrations/new.html.erb:34:in `block in _app_views_user_registrations_new_html_erb__807295373_59406576__998379719'
+  app/views/user_registrations/new.html.erb:21:in `_app_views_user_registrations_new_html_erb__807295373_59406576__998379719'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.0ms)
+
+
+Started GET "/users/sign_up?user[user_type]=student" for 127.0.0.1 at 2011-09-27 23:56:58 -0400
+  Processing by UserRegistrationsController#new as HTML
+  Parameters: {"user"=>{"user_type"=>"student"}}
+Rendered user_registrations/_student_fields.erb (0.0ms)
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered user_registrations/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 85ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-09-27 23:57:06 -0400
+  Processing by UserRegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgN5GmGn0EufQ3i/SJEjTazEarxrazj36hwqES2n784=", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user_type"=>"student"}, "commit"=>"Sign up"}
+WARNING: Can't mass-assign protected attributes: user_type
+Rendered user_registrations/_student_fields.erb (0.0ms)
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered user_registrations/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 84ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-09-27 23:57:11 -0400
+  Processing by UserRegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fgN5GmGn0EufQ3i/SJEjTazEarxrazj36hwqES2n784=", "user"=>{"email"=>"igravity@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user_type"=>"student"}, "commit"=>"Sign up"}
+WARNING: Can't mass-assign protected attributes: user_type
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (`users`.`email` = BINARY 'igravity@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (0.0ms)[0m  BEGIN
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (`users`.`email` = BINARY 'igravity@gmail.com') LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  describe `students`
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO `students` (`created_at`, `updated_at`) VALUES ('2011-09-28 03:57:12', '2011-09-28 03:57:12')[0m
+  [1m[35mSQL (2.0ms)[0m  describe `users`
+  [1m[36mAREL (0.0ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `created_at`, `updated_at`, `first_name`, `last_name`, `role`, `rolable_id`, `rolable_type`) VALUES ('igravity@gmail.com', '$2a$10$LICMjPSduIlsW53S4yo3SetIH0RagiATpFwFe4FiBpaWmRgRp2/YC', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2011-09-28 03:57:12', '2011-09-28 03:57:12', NULL, NULL, NULL, 1, 'Student')[0m
+  [1m[35mSQL (27.0ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.0ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2011-09-28 03:57:12', `current_sign_in_at` = '2011-09-28 03:57:12', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-09-28 03:57:12' WHERE (`users`.`id` = 2)
+  [1m[36mSQL (17.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 392ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-09-27 23:57:12 -0400
+  Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT `users`.* FROM `users` WHERE (`users`.`id` = 2) LIMIT 1
+Rendered home/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 59ms (Views: 59.0ms | ActiveRecord: 0.0ms)

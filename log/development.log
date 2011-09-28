@@ -117,3 +117,114 @@ Started POST "/users" for 127.0.0.1 at 2011-09-27 22:21:57 -0400
 Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/shared/_links.erb (1.0ms)
 Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/devise-1.4.7/app/views/devise/registrations/new.html.erb within layouts/application (14.0ms)
 Completed 200 OK in 71ms (Views: 34.0ms | ActiveRecord: 13.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2011-09-27 22:26:34 -0400
+  Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qdsXdRbVzxDvF63etbf791D1sTug3ALry/jGriJK4jQ=", "user"=>{"email"=>"rhall@cmu.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mSQL (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mUser Load (27.0ms)[0m  [1mSELECT `users`.`id` FROM `users` WHERE (`users`.`email` = BINARY 'rhall@cmu.edu') LIMIT 1[0m
+  [1m[35mSQL (2.0ms)[0m  describe `users`
+  [1m[36mAREL (5.0ms)[0m  [1mINSERT INTO `users` (`email`, `encrypted_password`, `reset_password_token`, `reset_password_sent_at`, `remember_created_at`, `sign_in_count`, `current_sign_in_at`, `last_sign_in_at`, `current_sign_in_ip`, `last_sign_in_ip`, `created_at`, `updated_at`) VALUES ('rhall@cmu.edu', '$2a$10$Pw1DvNkLzZfoecx5Oc1eeet0eRg.PZEzh8oO7/KBavS1g.nS.D7Rq', NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, '2011-09-28 02:26:35', '2011-09-28 02:26:35')[0m
+  [1m[35mSQL (26.0ms)[0m  COMMIT
+  [1m[36mSQL (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (34.0ms)[0m  UPDATE `users` SET `last_sign_in_at` = '2011-09-28 02:26:35', `current_sign_in_at` = '2011-09-28 02:26:35', `last_sign_in_ip` = '127.0.0.1', `current_sign_in_ip` = '127.0.0.1', `sign_in_count` = 1, `updated_at` = '2011-09-28 02:26:35' WHERE (`users`.`id` = 1)
+  [1m[36mSQL (15.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 798ms
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+  [1m[35mSQL (0.0ms)[0m  CREATE TABLE `staffs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+Mysql::Error: Table 'staffs' already exists: CREATE TABLE `staffs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+  [1m[35mSQL (64.0ms)[0m  CREATE TABLE `staffs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (57.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928022941')[0m
+Migrating to CreateStudents (20110928022959)
+  [1m[35mSQL (77.0ms)[0m  CREATE TABLE `students` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (21.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928022959')[0m
+Migrating to CreateContacts (20110928023057)
+  [1m[35mSQL (52.0ms)[0m  CREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `office_number` varchar(255), `mobile_number` varchar(255), `skype` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (19.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110928023057')[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `assignments`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `assignments`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `contacts`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `contacts`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `partners`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_applications`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_applications`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `project_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `staffs`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `staffs`
+  [1m[36mSQL (3.0ms)[0m  [1mdescribe `student_applications`[0m
+  [1m[35mSQL (1.0ms)[0m  SHOW KEYS FROM `student_applications`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `student_scorecards`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `students`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `students`
+  [1m[36mSQL (2.0ms)[0m  [1mdescribe `users`[0m
+  [1m[35mSQL (0.0ms)[0m  SHOW KEYS FROM `users`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreatePartners (20110927042447)
+Migrating to CreateAssignments (20110927042631)
+Migrating to CreateStudentApplications (20110927042710)
+Migrating to CreateProjectApplications (20110927042755)
+Migrating to CreateProjectScorecards (20110927042930)
+Migrating to CreateStudentScorecards (20110927043135)
+Migrating to DeviseCreateUsers (20110928020628)
+Migrating to CreateStaffs (20110928022941)
+Migrating to CreateStudents (20110928022959)
+Migrating to CreateContacts (20110928023057)
+Migrating to AddUsersFields (20110928023340)
+  [1m[35mSQL (218.0ms)[0m  ALTER TABLE `users` ADD `first_name` varchar(255)
+  [1m[36mSQL (180.0ms)[0m  [1mALTER TABLE `users` ADD `last_name` varchar(255)[0m
+  [1m[35mSQL (33.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20110928023340')
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (2.0ms)[0m  describe `assignments`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `contacts`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `contacts`[0m
+  [1m[35mSQL (12.0ms)[0m  describe `partners`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `partners`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `project_applications`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `project_scorecards`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `project_scorecards`[0m
+  [1m[35mSQL (4.0ms)[0m  describe `staffs`
+  [1m[36mSQL (4.0ms)[0m  [1mSHOW KEYS FROM `staffs`[0m
+  [1m[35mSQL (3.0ms)[0m  describe `student_applications`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35mSQL (3.0ms)[0m  describe `student_scorecards`
+  [1m[36mSQL (1.0ms)[0m  [1mSHOW KEYS FROM `student_scorecards`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `students`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `students`[0m
+  [1m[35mSQL (2.0ms)[0m  describe `users`
+  [1m[36mSQL (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m

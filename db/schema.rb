@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110928020628) do
+ActiveRecord::Schema.define(:version => 20110928023340) do
 
   create_table "assignments", :force => true do |t|
     t.string   "position"
@@ -19,10 +19,6 @@ ActiveRecord::Schema.define(:version => 20110928020628) do
   end
 
   create_table "contacts", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "password"
     t.string   "office_number"
     t.string   "mobile_number"
     t.string   "skype"
@@ -74,10 +70,6 @@ ActiveRecord::Schema.define(:version => 20110928020628) do
   end
 
   create_table "staffs", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
-    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -113,8 +105,6 @@ ActiveRecord::Schema.define(:version => 20110928020628) do
   end
 
   create_table "students", :force => true do |t|
-    t.string   "email"
-    t.string   "password"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -132,6 +122,8 @@ ActiveRecord::Schema.define(:version => 20110928020628) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

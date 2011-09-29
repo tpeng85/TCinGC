@@ -1,6 +1,0 @@
-development:
-  adapter: mysql
-  database: tcingc
-  username: tcingc
-  password: tcingc
-  host: localhost

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  partner_id: 1
+  description: MyText
+  number_of_consultants: 1
+  accepted: false
+  open: false
+
+two:
+  partner_id: 1
+  description: MyText
+  number_of_consultants: 1
+  accepted: false
+  open: false

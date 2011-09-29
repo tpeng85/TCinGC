@@ -1,0 +1,49 @@
+<h1>Listing project_scorecards</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Project application</th>
+    <th>Database score</th>
+    <th>Web app score</th>
+    <th>Design score</th>
+    <th>Tech plan score</th>
+    <th>Web dev score</th>
+    <th>Content mgt score</th>
+    <th>Tech support score</th>
+    <th>Geo infosys score</th>
+    <th>Egov score</th>
+    <th>Ehealth score</th>
+    <th>Security score</th>
+    <th>Updated by</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @project_scorecards.each do |project_scorecard| %>
+  <tr>
+    <td><%= project_scorecard.user_id %></td>
+    <td><%= project_scorecard.project_application_id %></td>
+    <td><%= project_scorecard.database_score %></td>
+    <td><%= project_scorecard.web_app_score %></td>
+    <td><%= project_scorecard.design_score %></td>
+    <td><%= project_scorecard.tech_plan_score %></td>
+    <td><%= project_scorecard.web_dev_score %></td>
+    <td><%= project_scorecard.content_mgt_score %></td>
+    <td><%= project_scorecard.tech_support_score %></td>
+    <td><%= project_scorecard.geo_infosys_score %></td>
+    <td><%= project_scorecard.egov_score %></td>
+    <td><%= project_scorecard.ehealth_score %></td>
+    <td><%= project_scorecard.security_score %></td>
+    <td><%= project_scorecard.updated_by %></td>
+    <td><%= link_to 'Show', project_scorecard %></td>
+    <td><%= link_to 'Edit', edit_project_scorecard_path(project_scorecard) %></td>
+    <td><%= link_to 'Destroy', project_scorecard, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Project scorecard', new_project_scorecard_path %>

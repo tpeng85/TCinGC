@@ -1,0 +1,77 @@
+<%= form_for(@partner) do |f| %>
+  <% if @partner.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@partner.errors.count, "error") %> prohibited this partner from being saved:</h2>
+
+      <ul>
+      <% @partner.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address_one %><br />
+    <%= f.text_field :address_one %>
+  </div>
+  <div class="field">
+    <%= f.label :address_two %><br />
+    <%= f.text_field :address_two %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :living_accomodation %><br />
+    <%= f.text_field :living_accomodation %>
+  </div>
+  <div class="field">
+    <%= f.label :living_utilities %><br />
+    <%= f.text_area :living_utilities %>
+  </div>
+  <div class="field">
+    <%= f.label :distance_to_duty_station %><br />
+    <%= f.text_field :distance_to_duty_station %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_of_living %><br />
+    <%= f.text_field :cost_of_living %>
+  </div>
+  <div class="field">
+    <%= f.label :transportation %><br />
+    <%= f.text_field :transportation %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_of_transportation %><br />
+    <%= f.text_field :cost_of_transportation %>
+  </div>
+  <div class="field">
+    <%= f.label :visa_fee %><br />
+    <%= f.text_field :visa_fee %>
+  </div>
+  <div class="field">
+    <%= f.label :visa_requirements %><br />
+    <%= f.text_area :visa_requirements %>
+  </div>
+  <div class="field">
+    <%= f.label :medivac_details %><br />
+    <%= f.text_area :medivac_details %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

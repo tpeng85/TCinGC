@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @student_application.user_id %>
+</p>
+
+<p>
+  <b>Resume:</b>
+  <%= @student_application.resume %>
+</p>
+
+<p>
+  <b>Transcript:</b>
+  <%= @student_application.transcript %>
+</p>
+
+<p>
+  <b>Statement of interest:</b>
+  <%= @student_application.statement_of_interest %>
+</p>
+
+<p>
+  <b>Accepted:</b>
+  <%= @student_application.accepted %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%= @student_application.open %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_application_path(@student_application) %> |
+<%= link_to 'Back', student_applications_path %>

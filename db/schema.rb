@@ -11,7 +11,97 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110929012105) do
+ActiveRecord::Schema.define(:version => 20110929014306) do
+
+  create_table "assignments", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "partner_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "partners", :force => true do |t|
+    t.string   "name"
+    t.string   "address_one"
+    t.string   "address_two"
+    t.string   "type"
+    t.text     "description"
+    t.string   "language"
+    t.string   "living_accomodation"
+    t.text     "living_utilities"
+    t.float    "distance_to_duty_station"
+    t.float    "cost_of_living"
+    t.string   "transportation"
+    t.float    "cost_of_transportation"
+    t.float    "visa_fee"
+    t.text     "visa_requirements"
+    t.text     "medivac_details"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "project_applications", :force => true do |t|
+    t.integer  "partner_id"
+    t.text     "description"
+    t.integer  "number_of_consultants"
+    t.boolean  "accepted"
+    t.boolean  "open"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "project_scorecards", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "project_application_id"
+    t.integer  "database_score"
+    t.integer  "web_app_score"
+    t.integer  "design_score"
+    t.integer  "tech_plan_score"
+    t.integer  "web_dev_score"
+    t.integer  "content_mgt_score"
+    t.integer  "tech_support_score"
+    t.integer  "geo_infosys_score"
+    t.integer  "egov_score"
+    t.integer  "ehealth_score"
+    t.integer  "security_score"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_applications", :force => true do |t|
+    t.integer  "user_id"
+    t.binary   "resume"
+    t.binary   "transcript"
+    t.binary   "statement_of_interest"
+    t.boolean  "accepted"
+    t.boolean  "open"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "student_scorecards", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "student_application_id"
+    t.integer  "resume_score"
+    t.integer  "transcript_score"
+    t.integer  "statement_of_interest_score"
+    t.integer  "special_class_score"
+    t.integer  "database_score"
+    t.integer  "web_app_score"
+    t.integer  "design_score"
+    t.integer  "tech_plan_score"
+    t.integer  "web_dev_score"
+    t.integer  "content_mgt_score"
+    t.integer  "tech_support_score"
+    t.integer  "geo_infosys_score"
+    t.integer  "egov_score"
+    t.integer  "ehealth_score"
+    t.integer  "security_score"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false

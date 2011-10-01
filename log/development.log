@@ -1,0 +1,1681 @@
+  [1m[36m (50.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110929011823)
+Migrating to AddFieldsToUser (20110929012105)
+Migrating to CreatePartners (20110929013001)
+Migrating to CreateStudentApplications (20110929013514)
+Migrating to CreateProjectApplications (20110929013604)
+Migrating to CreateProjectScorecards (20110929013903)
+Migrating to CreateStudentScorecards (20110929014057)
+Migrating to CreateAssignments (20110929014306)
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (20.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35m (10.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110929011823)
+Migrating to AddFieldsToUser (20110929012105)
+Migrating to CreatePartners (20110929013001)
+Migrating to CreateStudentApplications (20110929013514)
+Migrating to CreateProjectApplications (20110929013604)
+Migrating to CreateProjectScorecards (20110929013903)
+Migrating to CreateStudentScorecards (20110929014057)
+Migrating to CreateAssignments (20110929014306)
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (10.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110929011823)
+Migrating to AddFieldsToUser (20110929012105)
+Migrating to CreatePartners (20110929013001)
+Migrating to CreateStudentApplications (20110929013514)
+Migrating to CreateProjectApplications (20110929013604)
+Migrating to CreateProjectScorecards (20110929013903)
+Migrating to CreateStudentScorecards (20110929014057)
+Migrating to CreateAssignments (20110929014306)
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-10-01 13:44:08 -0400
+Served asset /rails.png - 200 OK (37ms)
+
+
+Started GET "/student_applications" for 127.0.0.1 at 2011-10-01 13:52:06 -0400
+  Processing by StudentApplicationsController#index as HTML
+  [1m[36mStudentApplication Load (0.0ms)[0m  [1mSELECT `student_applications`.* FROM `student_applications` [0m
+Rendered student_applications/index.html.erb within layouts/application (36.0ms)
+Compiled application.css  (23ms)  (pid 5360)
+Compiled partners.css  (11ms)  (pid 5360)
+Compiled project_applications.css  (6ms)  (pid 5360)
+Compiled project_scorecards.css  (6ms)  (pid 5360)
+Compiled scaffolds.css  (16ms)  (pid 5360)
+Compiled student_applications.css  (4ms)  (pid 5360)
+Compiled student_scorecards.css  (3ms)  (pid 5360)
+Compiled application.js  (41ms)  (pid 5360)
+Compiled jquery.js  (102ms)  (pid 5360)
+Compiled jquery_ujs.js  (9ms)  (pid 5360)
+Compiled partners.js  (759ms)  (pid 5360)
+Compiled project_applications.js  (167ms)  (pid 5360)
+Compiled project_scorecards.js  (117ms)  (pid 5360)
+Compiled student_applications.js  (154ms)  (pid 5360)
+Compiled student_scorecards.js  (136ms)  (pid 5360)
+Completed 200 OK in 2089ms (Views: 2086.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /partners.css - 200 OK (33ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /project_applications.css - 200 OK (16ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /scaffolds.css - 200 OK (14ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /project_scorecards.css - 200 OK (15ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /student_applications.css - 200 OK (14ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /student_scorecards.css - 200 OK (15ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /jquery.js - 200 OK (18ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /jquery_ujs.js - 200 OK (13ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /partners.js - 200 OK (19ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /project_applications.js - 200 OK (50ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /project_scorecards.js - 200 OK (12ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /student_applications.js - 200 OK (12ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /student_scorecards.js - 200 OK (14ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 13:52:09 -0400
+Served asset /application.js - 200 OK (15ms)
+
+
+Started GET "/student_applications/new" for 127.0.0.1 at 2011-10-01 13:52:14 -0400
+  Processing by StudentApplicationsController#new as HTML
+Rendered student_applications/_form.html.erb (22.0ms)
+Rendered student_applications/new.html.erb within layouts/application (98.0ms)
+Completed 200 OK in 142ms (Views: 132.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/student_applications/new" for 127.0.0.1 at 2011-10-01 13:59:44 -0400
+  Processing by StudentApplicationsController#new as HTML
+Rendered student_applications/_form.html.erb (22.0ms)
+Rendered student_applications/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 42ms (Views: 32.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /student_applications.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 13:59:45 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2011-10-01 14:01:38 -0400
+Served asset /rails.png - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:02:25 -0400
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:06:57 -0400
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:17:15 -0400
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (32.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:18:41 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (1.0ms)
+Compiled application.css  (3ms)  (pid 7024)
+Compiled home.css  (8ms)  (pid 7024)
+Compiled application.js  (34ms)  (pid 7024)
+Compiled home.js  (143ms)  (pid 7024)
+Completed 200 OK in 315ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /home.css - 200 OK (19ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /partners.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /project_applications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /project_scorecards.css - 304 Not Modified (53ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /student_applications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /student_scorecards.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /home.js - 200 OK (17ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /partners.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /project_applications.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /project_scorecards.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /student_applications.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /student_scorecards.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:42 -0400
+Served asset /application.js - 200 OK (19ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 14:18:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /project_scorecards.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 14:19:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+  [1m[36m (0.0ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20110929011823)
+Migrating to AddFieldsToUser (20110929012105)
+Migrating to CreatePartners (20110929013001)
+Migrating to CreateStudentApplications (20110929013514)
+Migrating to CreateProjectApplications (20110929013604)
+Migrating to CreateProjectScorecards (20110929013903)
+Migrating to CreateStudentScorecards (20110929014057)
+Migrating to CreateAssignments (20110929014306)
+Migrating to AddFieldsToStudentApplications (20111001182802)
+  [1m[35m (391.0ms)[0m  ALTER TABLE `student_applications` ADD `complete` tinyint(1)
+  [1m[36m (10.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20111001182802')[0m
+  [1m[35m (0.0ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `assignments`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `partners`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `project_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `project_scorecards`
+  [1m[36m (10.0ms)[0m  [1mSHOW KEYS FROM `student_applications`[0m
+  [1m[35m (0.0ms)[0m  SHOW KEYS FROM `student_scorecards`
+  [1m[36m (0.0ms)[0m  [1mSHOW KEYS FROM `users`[0m
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:38:31 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (507.0ms)
+Completed 500 Internal Server Error in 627ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_application' for #<#<Class:0x4c4e260>:0x4c4be78>):
+    1: <%= link_to 'Student Application', new_student_application %>
+  app/views/home/index.html:1:in `_app_views_home_index_html___493818252_33699816'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:39:08 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (215.0ms)
+Completed 500 Internal Server Error in 233ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_application' for #<#<Class:0x4d88360>:0x4d70c90>):
+    1: <%= link_to "Student Application", new_student_application %>
+  app/views/home/index.html:1:in `_app_views_home_index_html___493818252_40599216'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:40:06 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (69.0ms)
+Completed 500 Internal Server Error in 82ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_applications' for #<#<Class:0x4d2f758>:0x4d2ccc8>):
+    1: <%= link_to "Student Application", new_student_applications %>
+  app/views/home/index.html:1:in `_app_views_home_index_html___493818252_40460172'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:40:23 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::StudentApplications):
+    1: <%= link_to "Student Application", StudentApplications.new %>
+  app/views/home/index.html:1:in `_app_views_home_index_html___493818252_40029984'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:42:47 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (467.0ms)
+Completed 500 Internal Server Error in 614ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_Applications' for #<#<Class:0x4d3da20>:0x4d3ae40>):
+    1: <%= link_to "Student Application", new_student_Applications %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_39684000'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:43:02 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (101.0ms)
+Completed 500 Internal Server Error in 113ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_applications' for #<#<Class:0x3ec7f48>:0x3ec4e40>):
+    1: <%= link_to "Student Application", new_student_applications %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_32907300'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:43:09 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (96.0ms)
+Completed 500 Internal Server Error in 132ms
+
+ActionView::Template::Error (undefined local variable or method `new_student_application' for #<#<Class:0x3f3ce70>:0x3f35268>):
+    1: <%= link_to "Student Application", new_student_application %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_33136836'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:43:21 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (78.0ms)
+Completed 500 Internal Server Error in 114ms
+
+ActionView::Template::Error (undefined local variable or method `new_studentapplication' for #<#<Class:0x3f6d590>:0x3f69cc0>):
+    1: <%= link_to "Student Application", new_studentapplication %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_33244332'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:43:52 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (71.0ms)
+Completed 500 Internal Server Error in 84ms
+
+ActionView::Template::Error (undefined local variable or method `studentapplication' for #<#<Class:0x3f6b2c8>:0x3f67218>):
+    1: <%= link_to "Student Application", :controller => studentapplication, :action=> new %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_33239028'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:46:32 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (No route matches {:controller=>"StudentApplications", :action=>"new"}):
+    1: <%= link_to "Student Application", :controller => "StudentApplications", :action=> "new" %>
+  app/views/home/index.html:1:in `_app_views_home_index_html__209428382_33915252'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /partners.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /project_applications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /project_scorecards.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /student_applications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /student_scorecards.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /partners.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /project_applications.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /project_scorecards.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /student_scorecards.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /student_applications.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/student_applications/new" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+  Processing by StudentApplicationsController#new as HTML
+Rendered student_applications/_form.html.erb (23.0ms)
+Rendered student_applications/new.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 86ms (Views: 75.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:46:57 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:56:01 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (455.0ms)
+Completed 500 Internal Server Error in 579ms
+
+ActionView::Template::Error (undefined local variable or method `new_user_registration' for #<#<Class:0x49cb3c0>:0x49c0980>):
+    1: <%= link_to "New Student Application", :controller => "student_applications", :action=> "new" %>
+    2: 
+    3: <%= link_to "New Project Application", new_user_registration %>
+    4: 
+  app/views/home/index.html:3:in `_app_views_home_index_html__973027816_33439236'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:57:36 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (No route matches {:controller=>"devise/registration", :action=>"new"}):
+    1: <%= link_to "New Student Application", :controller => "student_applications", :action=> "new" %>
+    2: 
+    3: <%= link_to "New Project Application", :controller => "devise/registration", :action=>"new" %>
+    4: 
+  app/views/home/index.html:3:in `_app_views_home_index_html__973027816_38670192'
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /project_applications.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /partners.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /project_scorecards.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /student_applications.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:55 -0400
+Served asset /student_scorecards.css - 304 Not Modified (31ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /home.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /partners.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /project_applications.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /project_scorecards.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /student_applications.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /student_scorecards.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:56 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 110ms (Views: 82.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /project_scorecards.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:58:58 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:14 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 66ms (Views: 36.0ms | ActiveRecord: 19.0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /partners.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /project_applications.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 15:59:34 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+  Processing by Devise::RegistrationsController#new as HTML
+Rendered devise/shared/_links.erb (1.0ms)
+Rendered devise/registrations/new.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 84ms (Views: 58.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /project_applications.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:31 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html within layouts/application (2.0ms)
+Completed 200 OK in 17ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:33 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/student_applications/new" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+  Processing by StudentApplicationsController#new as HTML
+Rendered student_applications/_form.html.erb (22.0ms)
+Rendered student_applications/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 42ms (Views: 33.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /partners.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /project_scorecards.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /student_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:00:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/student_applications/new" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+  Processing by StudentApplicationsController#new as HTML
+Rendered student_applications/_form.html.erb (22.0ms)
+Rendered student_applications/new.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 41ms (Views: 30.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/partners.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /partners.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /project_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /project_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /student_applications.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.css?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /student_scorecards.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/partners.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /partners.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /student_applications.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/project_applications.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /project_applications.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/project_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /project_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student_scorecards.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /student_scorecards.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-10-01 16:09:31 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:09:33 -0400
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html__973027816_32974224 RAISED c:/Users/jp/TCinGC/app/views/home/index.html:2: syntax error, unexpected ')', expecting tASSOC
+...ns", :action=> "new", :params );@output_buffer.safe_concat('
+...                               ^
+c:/Users/jp/TCinGC/app/views/home/index.html:5: syntax error, unexpected ':', expecting ')'
+...egistrations", :action=>"new" :role => "contact");@output_bu...
+...                               ^
+c:/Users/jp/TCinGC/app/views/home/index.html:8: syntax error, unexpected keyword_ensure, expecting ')'
+c:/Users/jp/TCinGC/app/views/home/index.html:10: syntax error, unexpected keyword_end, expecting ')'
+Function body:           def _app_views_home_index_html__973027816_32974224(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p>
+	');@output_buffer.append= ( link_to "New Student Application", :controller => "devise/registrations", :action=> "new", :params );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+<p>
+	');@output_buffer.append= ( link_to "New Project Application", :controller => "devise/registrations", :action=>"new" :role => "contact");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__854669333__process_action__889610859__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/etag.rb:23:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/lock.rb:15:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered home/index.html within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (c:/Users/jp/TCinGC/app/views/home/index.html:2: syntax error, unexpected ')', expecting tASSOC
+...ns", :action=> "new", :params );@output_buffer.safe_concat('
+...                               ^
+c:/Users/jp/TCinGC/app/views/home/index.html:5: syntax error, unexpected ':', expecting ')'
+...egistrations", :action=>"new" :role => "contact");@output_bu...
+...                               ^
+c:/Users/jp/TCinGC/app/views/home/index.html:8: syntax error, unexpected keyword_ensure, expecting ')'
+c:/Users/jp/TCinGC/app/views/home/index.html:10: syntax error, unexpected keyword_end, expecting ')'):
+    1: <p>
+    2: 	<%= link_to "New Student Application", :controller => "devise/registrations", :action=> "new", :params %>
+    3: </p>
+    4: <p>
+    5: 	<%= link_to "New Project Application", :controller => "devise/registrations", :action=>"new" :role => "contact"%>
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-10-01 16:21:55 -0400
+  Processing by HomeController#index as HTML
+ERROR: compiling _app_views_home_index_html__973027816_38629956 RAISED c:/Users/jp/TCinGC/app/views/home/index.html:5: syntax error, unexpected ':', expecting ')'
+...egistrations", :action=>"new" :role => "contact");@output_bu...
+...                               ^
+Function body:           def _app_views_home_index_html__973027816_38629956(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "home/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<p>
+	');@output_buffer.append= ( link_to "New Student Application", :controller => "devise/registrations", :action=> "new" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+<p>
+	');@output_buffer.append= ( link_to "New Project Application", :controller => "devise/registrations", :action=>"new" :role => "contact");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</p>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/Ruby192/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__854669333__process_action__889610859__callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:35:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:34:in `catch'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/warden-1.0.5/lib/warden/manager.rb:34:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/etag.rb:23:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/conditionalget.rb:25:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/session/abstract/id.rb:195:in `context'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/session/abstract/id.rb:190:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/sendfile.rb:101:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/methodoverride.rb:24:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/runtime.rb:17:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/lock.rb:15:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+c:/Ruby192/lib/ruby/gems/1.9.1/gems/rack-1.3.3/lib/rack/handler/webrick.rb:59:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+c:/Ruby192/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+c:/Ruby192/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered home/index.html within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (c:/Users/jp/TCinGC/app/views/home/index.html:5: syntax error, unexpected ':', expecting ')'
+...egistrations", :action=>"new" :role => "contact");@output_bu...
+...                               ^):
+    2: 	<%= link_to "New Student Application", :controller => "devise/registrations", :action=> "new" %>
+    3: </p>
+    4: <p>
+    5: 	<%= link_to "New Project Application", :controller => "devise/registrations", :action=>"new" :role => "contact"%>
+    6: </p>
+  
+
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered c:/Ruby192/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.0ms)

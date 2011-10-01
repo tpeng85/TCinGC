@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110929014306) do
+ActiveRecord::Schema.define(:version => 20111001182802) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20110929014306) do
     t.boolean  "open"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "complete"
   end
 
   create_table "student_scorecards", :force => true do |t|

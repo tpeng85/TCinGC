@@ -1,13 +1,5 @@
 class StudentApplication < ActiveRecord::Base
-	attr_accessible :resume, :transcript, :statement_of_interest, :accepted, :open, :complete
+	# Setup accessible (or protected) attributes for your model
+	attr_accessible :resume, :transcript, :statement_of_interest, :accepted, :open
 
 end
-
-
-t.integer :user_id
-      t.binary :resume
-      t.binary :transcript
-      t.binary :statement_of_interest
-      t.boolean :accepted
-      t.boolean :open
-	  t.boolean :complete

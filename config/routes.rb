@@ -8,6 +8,8 @@ TCinGC::Application.routes.draw do
   resources :student_applications
 
   resources :partners
+  
+  resources :assignments
 
   devise_for :users
 

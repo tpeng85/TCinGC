@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	
   ROLES = %w[staff student contact]
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable

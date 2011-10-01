@@ -7,6 +7,7 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.binary :statement_of_interest
       t.boolean :accepted
       t.boolean :open
+	  t.boolean :complete
 
       t.timestamps
     end
